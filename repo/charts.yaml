@@ -1,0 +1,9 @@
+apiVersion: v2
+name: odoo
+type: application
+version: 1.0.0
+appVersion: "1.0.0"
+dependencies:
+- name: quarkus
+  version: 16.0.20221115 
+  repository: https://charts.bitnami.com/bitnami
