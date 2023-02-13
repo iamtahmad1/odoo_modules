@@ -14,8 +14,7 @@ global:
   ## imagePullSecrets:
   ##   - myRegistryKeySecretName
   ##
-  imagePullSecrets:
-    - name: regcred01
+  imagePullSecrets: []
   storageClass: ""
 
 ## @section Common parameters
@@ -84,7 +83,8 @@ image:
   ## pullSecrets:
   ##   - myRegistryKeySecretName
   ##
-  pullSecrets: []
+  pullSecrets:
+  - regcred01
   ## Enable debug mode
   ##
   debug: false
