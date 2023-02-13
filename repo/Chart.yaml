@@ -5,5 +5,5 @@ version: 1.0.0
 appVersion: "1.0.0"
 dependencies:
 - name: odoo
-  version: 16.0.20221115 
+  version: 23.0.7 
   repository: https://charts.bitnami.com/bitnami
