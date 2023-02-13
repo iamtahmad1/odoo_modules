@@ -348,7 +348,7 @@ odoo:
   ##
   updateStrategy:
     type: Recreate
-    rollingUpdate: {}
+    #rollingUpdate: {}
   ## @param extraVolumes Optionally specify extra list of additional volumes for Odoo pods
   ##
   extraVolumes: []
