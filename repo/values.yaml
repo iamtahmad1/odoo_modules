@@ -391,7 +391,7 @@ initContainers: []
 service:
   ## @param service.type Odoo service type
   ##
-  type: LoadBalancer
+  type: NodePort
   ## @param service.ports.http Odoo service HTTP port
   ##
   ports:
