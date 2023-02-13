@@ -12,6 +12,8 @@ RUN mkdir -p /opt/bitnami/odoo/addons_custom
 
 ADD custom_modules /opt/bitnami/odoo/addons_custom/
 
+EXPOSE 8069 8071 8072
+
 #RUN mkdir -p /home/odoo/nltk_data
 
 #RUN chmod -R 777 /home/odoo/
