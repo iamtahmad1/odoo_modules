@@ -346,7 +346,8 @@ odoo:
   ##    maxSurge: 25%
   ##    maxUnavailable: 25%
   ##
-  updateStrategy: Recreate
+  updateStrategy: 
+    type: Recreate
   ## @param extraVolumes Optionally specify extra list of additional volumes for Odoo pods
   ##
   extraVolumes: []
