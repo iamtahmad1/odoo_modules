@@ -347,7 +347,7 @@ odoo:
   ##    maxUnavailable: 25%
   ##
   updateStrategy:
-    type: RollingUpdate
+    type: Recreate
     rollingUpdate: {}
   ## @param extraVolumes Optionally specify extra list of additional volumes for Odoo pods
   ##
