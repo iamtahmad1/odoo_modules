@@ -10,6 +10,8 @@ RUN venv/bin/pip install -r requirement.txt
 
 RUN mkdir -p /opt/bitnami/odoo/addons_custom
 
+RUN mkdir -p /opt/bitnami/odoo/test
+
 ADD custom_modules /opt/bitnami/odoo/addons_custom/
 
 EXPOSE 8069 8071 8072
