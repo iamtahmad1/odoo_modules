@@ -1,2 +1,0 @@
-paddlepaddle==2.3.2
-aspose-words==21.11.0
