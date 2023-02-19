@@ -1,6 +1,6 @@
 # odoo_modulesgust
-# test1
-# test2
-# test3
-# test4
-# test5
+CI/CD pipeline for odoo with custom modules
+
+CI - GithubActions
+Packaging - Docker + helm
+CD - ArgoCD
