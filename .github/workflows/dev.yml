@@ -37,3 +37,17 @@ jobs:
           context: .
           push: true
           tags: ${{ secrets.DOCKERHUB_USERNAME }}/odoo:dev_latest
+
+      # restart argo cd deployment
+      - name: argocd deployment
+        uses: clowdhaus/argo-cd-action/@main
+        with:
+          command: login 
+          options: ${{ secrets.ARGOCD_SERVER }} --username ${{ secrets.ARGOCD_USERNAME }} --password ${{ secrets.ARGOCD_PASSWORD }}
+
+      - name: argocd deployment
+        uses: clowdhaus/argo-cd-action/@main
+        with:
+          command: app 
+          options: actions run ${{ secrets.ARGOCD_DEV_APP }} restart --kind Deployment
+
